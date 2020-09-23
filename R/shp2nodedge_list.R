@@ -31,13 +31,14 @@ shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detaile
     for (i in 1:numEdges) {
       M <- dim(Coords[[i]][[1]])[1]
       SEl <- as.double(10)
-      SEl <- .C("edgelength", as.double(Coords[[i]][[1]][,1]), as.double(Coords[[i]][[1]][, 2]),
-                as.integer(M),
+      SEl <- .C("edgelength", as.double(Coords[[i]][[1]][,
+                                                         1]), as.double(Coords[[i]][[1]][, 2]), as.integer(M),
                 SEl, as.integer(longlat))[[4]]
       edgeid <- edgeID.vec[i]
       nx <- as.double(Coords[[i]][[1]][1, 1])
       ny <- as.double(Coords[[i]][[1]][1, 2])
-      res1 <- Update.nodelist(nodexlist, nodeylist, nodelist,nx, ny)
+      res1 <- Update.nodelist(nodexlist, nodeylist, nodelist,
+                              nx, ny)
       fromid <- res1[[1]]
       if (res1[[2]]) {
         node <- list(res1[[1]], c(nx, ny))
@@ -46,9 +47,10 @@ shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detaile
         nodeylist <- c(nodeylist, ny)
       }
       for (j in 2:M) {
-        nx <- as.double(Coords[[i]][[1]][j,1])
-        ny <- as.double(Coords[[i]][[1]][j,2])
-        res1 <- Update.nodelist(nodexlist, nodeylist,nodelist, nx, ny)
+        nx <- as.double(Coords[[i]][[1]][j, 1])
+        ny <- as.double(Coords[[i]][[1]][j, 2])
+        res1 <- Update.nodelist(nodexlist, nodeylist,
+                                nodelist, nx, ny)
         toid <- res1[[1]]
         if (res1[[2]]) {
           node <- list(res1[[1]], c(nx, ny))
@@ -57,9 +59,9 @@ shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detaile
           nodeylist <- c(nodeylist, ny)
         }
         El <- as.double(0)
-        El <- .C("edgelength", as.double(Coords[[i]][[1]][c(j-1, j), 1]),
-                 as.double(Coords[[i]][[1]][c(j- 1, j), 2]),
-                 as.integer(2), El, as.integer(longlat))[[4]]
+        El <- .C("edgelength", as.double(Coords[[i]][[1]][c(j -
+                                                              1, j), 1]), as.double(Coords[[i]][[1]][c(j -
+                                                                                                         1, j), 2]), as.integer(2), El, as.integer(longlat))[[4]]
         ROL <- El/SEl
         edgelist <- Update.edgelist(edgelist, edgeid,
                                     fromid, toid, ROL, Detailed = Detailed)
@@ -75,7 +77,8 @@ shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detaile
       M <- dim(Coords[[i]][[1]])[1]
       nx <- as.double(Coords[[i]][[1]][1, 1])
       ny <- as.double(Coords[[i]][[1]][1, 2])
-      res1 <- Update.nodelist(nodexlist, nodeylist, nodelist,nx, ny)
+      res1 <- Update.nodelist(nodexlist, nodeylist, nodelist,
+                              nx, ny)
       fromid <- res1[[1]]
       if (res1[[2]]) {
         node <- list(res1[[1]], c(nx, ny))
@@ -99,8 +102,7 @@ shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detaile
                                   toid, Detailed = Detailed)
       El <- as.double(0)
       if (ELComputed) {
-        El <- .C("edgelength", as.double(Coords[[i]][[1]][,1]), as.double(Coords[[i]][[1]][, 2]),
-                 as.integer(M),
+        El <- .C("edgelength", as.double(Coords[[i]][[1]][,1]), as.double(Coords[[i]][[1]][, 2]), as.integer(M),
                  El, as.integer(longlat))[[4]]
         edgelength <- c(edgelength, El)
       }
@@ -116,3 +118,4 @@ shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detaile
   res <- list(Detailed, nodelist, edgelist, edgelength, Eadf,
               nodexlist, nodeylist)
 }
+
