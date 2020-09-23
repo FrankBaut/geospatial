@@ -1,3 +1,4 @@
+#
 nodedge_list2igraph <- function (nodelist, edgelist, weight = NULL, eadf = NULL, Directed = FALSE) {
   nodes <- nodelist[, 1]
   Ne <- length(edgelist[, 1])

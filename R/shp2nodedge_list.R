@@ -1,5 +1,3 @@
-#datos de apatial linesdataframe a una lista de nodos y aristas
-#shp a nodedge_list
 shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detailed = FALSE,
                             ea.prop = NULL) {
   if (!is(ntdata, "SpatialLinesDataFrame"))
@@ -118,4 +116,3 @@ shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detaile
   res <- list(Detailed, nodelist, edgelist, edgelength, Eadf,
               nodexlist, nodeylist)
 }
-
