@@ -1,4 +1,17 @@
-shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detailed = FALSE,
+#' shp2nodedge_list
+#'
+#' @param ntdata
+#' @param ELComputed
+#' @param longlat
+#' @param Detailed
+#' @param ea.prop
+#'
+#' @return
+#' @importFrom sp coordinates
+#' @export
+#'
+#' @examples
+shp2nodedge_list <- function (ntdata, ELComputed = FALSE, longlat = FALSE, Detailed = FALSE,
                             ea.prop = NULL) {
   if (!is(ntdata, "SpatialLinesDataFrame"))
     stop("Input data is not a proper spatial network data frame, here only SpatialLinesDataFrame is accepted.")

@@ -1,4 +1,17 @@
 #
+#' nodedge_list2igraph
+#'
+#' @param nodelist
+#' @param edgelist
+#' @param weight
+#' @param eadf
+#' @param Directed
+#'
+#' @importFrom igraph graph.edgelist set.vertex.attribute set.edge.attribute
+#' @return
+#' @export
+#'
+#' @examples
 nodedge_list2igraph <- function (nodelist, edgelist, weight = NULL, eadf = NULL, Directed = FALSE) {
   nodes <- nodelist[, 1]
   Ne <- length(edgelist[, 1])
@@ -17,12 +30,12 @@ nodedge_list2igraph <- function (nodelist, edgelist, weight = NULL, eadf = NULL,
     if (length(eadf[, 1]) != Ne)
       stop("The eadf must be numeric and the same length as edges elment")
   }
-  gr <- graph.edgelist(unique(edgelist[, c(2, 3)]), directed = T)
-  gr <- set.vertex.attribute(gr, "x", V(gr), Nodes.coordinates(nodelist)[,1])
-  gr <- set.vertex.attribute(gr, "y", V(gr), Nodes.coordinates(nodelist)[,2])
+  gr <- igraph::graph.edgelist(unique(edgelist[, c(2, 3)]), directed = T)
+  gr <- igraph::set.vertex.attribute(gr, "x", V(gr), Nodes.coordinates(nodelist)[,1])
+  gr <- igraph::set.vertex.attribute(gr, "y", V(gr), Nodes.coordinates(nodelist)[,2])
   gr.es <- E(gr)
   if (!is.null(weight))
-    gr <- set.edge.attribute(gr, "weight", gr.es, weight)
+    gr <- igraph::set.edge.attribute(gr, "weight", gr.es, weight)
   if (!is.null(eadf)) {
     eanms <- colnames(eadf)
     n <- length(eanms)
