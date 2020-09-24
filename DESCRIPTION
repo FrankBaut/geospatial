@@ -13,5 +13,7 @@ Imports:
     sp,
     osrm,
     foreach,
-    igraph
+    igraph,
+    tibble,
+    magrittr
 RoxygenNote: 7.1.1
