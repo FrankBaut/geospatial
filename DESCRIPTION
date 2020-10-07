@@ -14,9 +14,5 @@ Imports:
     osrm,
     foreach,
     igraph,
-<<<<<<< HEAD
-=======
-    tibble,
->>>>>>> f116e74b8af0896a1daa220d2ff9eb8271dd4fef
     magrittr
 RoxygenNote: 7.1.1
