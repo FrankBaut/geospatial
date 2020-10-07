@@ -2,7 +2,7 @@
 % Please edit documentation in R/nodedge_list2igraph.R
 \name{nodedge_list2igraph}
 \alias{nodedge_list2igraph}
-\title{nodedge_list2igraph}
+\title{Title}
 \usage{
 nodedge_list2igraph(
   nodelist,
@@ -19,5 +19,5 @@ nodedge_list2igraph(
 
 }
 \description{
-nodedge_list2igraph
+Title
 }

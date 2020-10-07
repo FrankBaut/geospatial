@@ -1,4 +1,4 @@
-#' shp2nodedge_list
+#' Title
 #'
 #' @param ntdata
 #' @param ELComputed
@@ -7,12 +7,12 @@
 #' @param ea.prop
 #'
 #' @return
-#' @importFrom sp coordinates
 #' @export
 #'
 #' @examples
-shp2nodedge_list <- function (ntdata, ELComputed = FALSE, longlat = FALSE, Detailed = FALSE,
-                            ea.prop = NULL) {
+shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detailed = FALSE,
+                            ea.prop = NULL)
+{
   if (!is(ntdata, "SpatialLinesDataFrame"))
     stop("Input data is not a proper spatial network data frame, here only SpatialLinesDataFrame is accepted.")
   Coords <- sp::coordinates(ntdata)
@@ -113,7 +113,8 @@ shp2nodedge_list <- function (ntdata, ELComputed = FALSE, longlat = FALSE, Detai
                                   toid, Detailed = Detailed)
       El <- as.double(0)
       if (ELComputed) {
-        El <- .C("edgelength", as.double(Coords[[i]][[1]][,1]), as.double(Coords[[i]][[1]][, 2]), as.integer(M),
+        El <- .C("edgelength", as.double(Coords[[i]][[1]][,
+                                                          1]), as.double(Coords[[i]][[1]][, 2]), as.integer(M),
                  El, as.integer(longlat))[[4]]
         edgelength <- c(edgelength, El)
       }

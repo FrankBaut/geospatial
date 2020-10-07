@@ -2,7 +2,7 @@
 % Please edit documentation in R/shp2nodedge_list.R
 \name{shp2nodedge_list}
 \alias{shp2nodedge_list}
-\title{shp2nodedge_list}
+\title{Title}
 \usage{
 shp2nodedge_list(
   ntdata,
@@ -19,5 +19,5 @@ shp2nodedge_list(
 
 }
 \description{
-shp2nodedge_list
+Title
 }

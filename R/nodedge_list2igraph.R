@@ -1,5 +1,4 @@
-#
-#' nodedge_list2igraph
+#' Title
 #'
 #' @param nodelist
 #' @param edgelist
@@ -7,7 +6,6 @@
 #' @param eadf
 #' @param Directed
 #'
-#' @importFrom igraph graph.edgelist set.vertex.attribute set.edge.attribute
 #' @return
 #' @export
 #'
