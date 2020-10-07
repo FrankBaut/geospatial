@@ -13,5 +13,6 @@ Imports:
     sp,
     osrm,
     foreach,
-    igraph
+    igraph,
+    magrittr
 RoxygenNote: 7.1.1
