@@ -1,11 +1,3 @@
-#' Title
-#'
-#' @param nodelist
-#'
-#' @return
-#' @export
-#'
-#' @examples
 Nodes.coordinates<-function (nodelist = list())
 {
   Nn <- length(nodelist[, 1])
