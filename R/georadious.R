@@ -1,15 +1,16 @@
-#' Title georadius
+#'  georadius
 #'
-#' @param x
-#' @param y
-#' @param radius
-#' @param nPoints
+#' @param x longitude
+#' @param y latitude
+#' @param radius radius in km
+#' @param nPoints number of points over a circle
 #'
-#' @return cricleDF
+#' @return data frame
+#'
+#' @examples
+#' geospatial::georadius(x=-96.9236,y=-19.527196,radius = 1,nPoints = 100)
+#'
 #' @export
-#'
-#' @examples geospatial::georadius(x=-96.9236,y=-19.527196,radius = 1,nPoints = 100)
-#'
 georadius<-function(x,y,radius,nPoints){
   centers<-cbind(x,y) %>% as.data.frame()
   colnames(centers)<- c("lng","lat")
