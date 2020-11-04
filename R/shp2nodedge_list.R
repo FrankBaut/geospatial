@@ -113,6 +113,7 @@ shp2nodedge_list<-function (ntdata, ELComputed = FALSE, longlat = FALSE, Detaile
                                   toid, Detailed = Detailed)
       El <- as.double(0)
       if (ELComputed) {
+        dyn.load("libs/geospatial.so")
         El <- .C("edgelength", as.double(Coords[[i]][[1]][,
                                                           1]), as.double(Coords[[i]][[1]][, 2]), as.integer(M),
                  El, as.integer(longlat))[[4]]
