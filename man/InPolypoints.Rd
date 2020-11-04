@@ -20,7 +20,7 @@ InPolypoints(shapefile, nPoints, type)
  "Fibonacci" for Fibonacci sampling on the sphere (see references).}
 }
 \value{
-Spatial point
+Spatial points
 }
 \description{
 InPolypoints
