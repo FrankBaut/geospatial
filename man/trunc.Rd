@@ -2,7 +2,7 @@
 % Please edit documentation in R/trunc.R
 \name{trunc}
 \alias{trunc}
-\title{remove decimals from a value (significant numbers)}
+\title{Remove decimals from a value (significant numbers)}
 \usage{
 trunc(x, ..., prec = 0)
 }
@@ -15,7 +15,7 @@ trunc(x, ..., prec = 0)
 
 }
 \description{
-remove decimals from a value (significant numbers)
+Remove decimals from a value (significant numbers)
 }
 \examples{
 x<-129.317313

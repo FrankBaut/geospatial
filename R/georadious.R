@@ -1,4 +1,4 @@
-#'  georadius
+#' Get lat lon points in a circunference given a central geopoint and radius.
 #'
 #' @param x longitude
 #' @param y latitude
@@ -11,7 +11,7 @@
 #' geospatial::georadius(x=-96.9236,y=-19.527196,radius = 1,nPoints = 100)
 #'
 #' @export
-georadius<-function(x,y,radius,nPoints){
+georadius<-function(x,y,radius=5,nPoints){
   centers<-cbind(x,y) %>% as.data.frame()
   colnames(centers)<- c("lng","lat")
   meanLat <- mean(centers$lat)#Radio en kilometros

@@ -2,7 +2,7 @@
 % Please edit documentation in R/foo.R
 \name{\%>\%}
 \alias{\%>\%}
-\title{Pipe transforming functinos}
+\title{Pipe operator with which you may pipe a value forward into an expression or function call.}
 \arguments{
 \item{lhs, rhs}{A visualisation and a function to apply to it}
 }

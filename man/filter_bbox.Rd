@@ -2,7 +2,7 @@
 % Please edit documentation in R/filter_bbox.R
 \name{filter_bbox}
 \alias{filter_bbox}
-\title{filter_bbox}
+\title{Filter geopoints that fall in a bounding box}
 \usage{
 filter_bbox(data, x, y, X, Y)
 }
@@ -21,7 +21,7 @@ filter_bbox(data, x, y, X, Y)
 Filter geopoints
 }
 \description{
-filter_bbox
+Filter geopoints that fall in a bounding box
 }
 \examples{
 example

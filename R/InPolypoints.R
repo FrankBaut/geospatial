@@ -1,5 +1,5 @@
 #' InPolypoints
-#'
+#' Fill a polygon with random points inside.
 #' @param shapefile A polygon file
 #' @param nPoints  Number of points inside the polygon
 #' @param type  character; "random" for completely spatial random;

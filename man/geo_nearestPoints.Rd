@@ -2,7 +2,7 @@
 % Please edit documentation in R/geo_nearestPoints.R
 \name{geo_nearestPoints}
 \alias{geo_nearestPoints}
-\title{get the nearby points within a radius}
+\title{Get the nearby points given a radius}
 \usage{
 geo_nearestPoints(data, sepDistance)
 }
@@ -15,9 +15,9 @@ geo_nearestPoints(data, sepDistance)
 data frame
 }
 \description{
-get the nearby points within a radius
+Get the nearby points given a radius
 }
 \examples{
 data<-geospatial::georadius(-96.1312,18.1232,radius = 100,1000)
-geo_nearestPoints(data,sepDistance = 120)
+geospatial::geo_nearestPoints(data,sepDistance = 120)
 }

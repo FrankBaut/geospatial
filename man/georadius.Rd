@@ -2,9 +2,9 @@
 % Please edit documentation in R/georadious.R
 \name{georadius}
 \alias{georadius}
-\title{georadius}
+\title{Get lat lon points in a circunference given a central geopoint and radius.}
 \usage{
-georadius(x, y, radius, nPoints)
+georadius(x, y, radius = 5, nPoints)
 }
 \arguments{
 \item{x}{longitude}
@@ -19,7 +19,7 @@ georadius(x, y, radius, nPoints)
 data frame
 }
 \description{
-georadius
+Get lat lon points in a circunference given a central geopoint and radius.
 }
 \examples{
 geospatial::georadius(x=-96.9236,y=-19.527196,radius = 1,nPoints = 100)

@@ -1,4 +1,4 @@
-#' bounding_box
+#' Given a central geopoint, draw a bounding box with the geopoint in the center
 #'
 #' @param lat Central latitude
 #' @param lon Central longitude

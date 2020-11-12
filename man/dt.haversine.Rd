@@ -2,7 +2,7 @@
 % Please edit documentation in R/dt.haversine.R
 \name{dt.haversine}
 \alias{dt.haversine}
-\title{Get the separation distance betweeen two geopoints}
+\title{Calculates the separation distance between two geopoints considering the earth curvature.}
 \usage{
 dt.haversine(lat_from, lon_from, lat_to, lon_to, r = 6378137)
 }
@@ -21,7 +21,7 @@ dt.haversine(lat_from, lon_from, lat_to, lon_to, r = 6378137)
 Separation in km
 }
 \description{
-Get the separation distance betweeen two geopoints
+Calculates the separation distance between two geopoints considering the earth curvature.
 }
 \examples{
 dt.haversine(19.2313,-95.12123,18.312312,-96.23123)

@@ -4,7 +4,7 @@
 #'
 #' @return
 #' @importFrom foreach foreach `%do%`
-#' @importFrom shp2graph readsgpnw
+#' @importFrom shp2graph readshpnw
 
 #' @export
 #'

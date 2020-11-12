@@ -2,7 +2,7 @@
 % Please edit documentation in R/Recons_inout.R
 \name{recons_inout}
 \alias{recons_inout}
-\title{Recons_inout}
+\title{It joins several gepositions by means of the shortest route in a road network both back and forth.}
 \usage{
 recons_inout(from_lng, from_lat, data, type = c("in", "out"))
 }
@@ -19,7 +19,7 @@ recons_inout(from_lng, from_lat, data, type = c("in", "out"))
 sf file
 }
 \description{
-Recons_inout
+It joins several gepositions by means of the shortest route in a road network both back and forth.
 }
 \examples{
 x=-96.9236

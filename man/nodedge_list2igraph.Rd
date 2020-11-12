@@ -2,7 +2,7 @@
 % Please edit documentation in R/nodedge_list2igraph.R
 \name{nodedge_list2igraph}
 \alias{nodedge_list2igraph}
-\title{Title}
+\title{A function to produce an “igraph” object with the “nodelist” and “edgelist”, which could be returned by the function readshpnw.}
 \usage{
 nodedge_list2igraph(
   nodelist,
@@ -13,11 +13,23 @@ nodedge_list2igraph(
 )
 }
 \arguments{
-\item{Directed}{}
+\item{nodelist}{A “nodelist” object}
+
+\item{edgelist}{An “edgelist” object}
+
+\item{weight}{A numberic vector to weight all the edges in the “edgelist”, of which the length equals to the number of edges;}
+
+\item{eadf}{A data frame of attributes corresponding to all the edges;}
+
+\item{Directed}{TRUE if edges are directed, FALSE otherwise;}
 }
 \value{
-
+1. The weighting vector, “weight”, will be used as default for any weigted calculations with edges in the “igraph” object.
+        2. The coordinate of each node is attached as attributes “X” and “Y”, which could be retrived via the function “get.vertex.attribute” from the package igraph.
 }
 \description{
-Title
+A function to produce an “igraph” object with the “nodelist” and “edgelist”, which could be returned by the function readshpnw.
+}
+\examples{
+
 }

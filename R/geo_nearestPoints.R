@@ -1,4 +1,4 @@
-#' get the nearby points within a radius
+#' Get the nearby points given a radius
 #'
 #' @param data data frame with lng and lat columns
 #' @param sepDistance interval of geopositions in meters
@@ -8,7 +8,7 @@
 #'
 #' @examples
 #' data<-geospatial::georadius(-96.1312,18.1232,radius = 100,1000)
-#' geo_nearestPoints(data,sepDistance = 120)
+#' geospatial::geo_nearestPoints(data,sepDistance = 120)
 geo_nearestPoints<-function(data,sepDistance){
   xy <-data[,c(1,2)]
   spdf <- sp::SpatialPointsDataFrame(coords = xy,

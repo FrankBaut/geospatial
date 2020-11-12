@@ -1,4 +1,4 @@
-#' remove decimals from a value (significant numbers)
+#' Remove decimals from a value (significant numbers)
 #'
 #' @param x float value
 #' @param ...

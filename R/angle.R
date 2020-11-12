@@ -1,4 +1,4 @@
-#' angle
+#' Calculates the angle between two geopositions with respect to an axis.
 #'
 #' @param from_lng Origin longitude
 #' @param from_lat Origin latitude

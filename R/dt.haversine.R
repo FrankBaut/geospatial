@@ -1,4 +1,4 @@
-#' Get the separation distance betweeen two geopoints
+#' Calculates the separation distance between two geopoints considering the earth curvature.
 #'
 #' @param lat_from Origin lat
 #' @param lon_from Origin lng

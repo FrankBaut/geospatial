@@ -2,7 +2,8 @@
 % Please edit documentation in R/InPolypoints.R
 \name{InPolypoints}
 \alias{InPolypoints}
-\title{InPolypoints}
+\title{InPolypoints
+Fill a polygon with random points inside.}
 \usage{
 InPolypoints(shapefile, nPoints, type)
 }
@@ -24,4 +25,5 @@ Spatial points
 }
 \description{
 InPolypoints
+Fill a polygon with random points inside.
 }

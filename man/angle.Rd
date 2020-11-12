@@ -2,7 +2,7 @@
 % Please edit documentation in R/angle.R
 \name{angle}
 \alias{angle}
-\title{angle}
+\title{Calculates the angle between two geopositions with respect to an axis.}
 \usage{
 angle(from_lng, from_lat, to_lng, to_lat, respecto = 0)
 }
@@ -21,7 +21,7 @@ angle(from_lng, from_lat, to_lng, to_lat, respecto = 0)
 angle in degrees
 }
 \description{
-angle
+Calculates the angle between two geopositions with respect to an axis.
 }
 \examples{
 x=-96.9236

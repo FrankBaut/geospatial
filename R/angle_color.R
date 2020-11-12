@@ -1,4 +1,4 @@
-#' angle_color
+#' Given an angle between 0 and 360 degrees, return a color
 #'
 #' @param angle angle from 0 to 360 degrees
 #'

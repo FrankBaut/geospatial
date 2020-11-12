@@ -2,7 +2,7 @@
 % Please edit documentation in R/bounding_box.R
 \name{bounding_box}
 \alias{bounding_box}
-\title{bounding_box}
+\title{Given a central geopoint, draw a bounding box with the geopoint in the center}
 \usage{
 bounding_box(lat, lon, dist, in.miles = TRUE)
 }
@@ -19,7 +19,7 @@ bounding_box(lat, lon, dist, in.miles = TRUE)
 
 }
 \description{
-bounding_box
+Given a central geopoint, draw a bounding box with the geopoint in the center
 }
 \examples{
 bounding_box(lat=19.01212,log=-96.19216,dist =100,in.miles = F)

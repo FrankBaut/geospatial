@@ -1,4 +1,4 @@
-#' filter_bbox
+#' Filter geopoints that fall in a bounding box
 #'
 #' @param data data frame with lng and lat colunm names
 #' @param x paraneter lng1 of bounding box

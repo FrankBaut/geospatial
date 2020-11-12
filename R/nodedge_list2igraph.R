@@ -1,15 +1,17 @@
-#' Title
+#'A function to produce an “igraph” object with the “nodelist” and “edgelist”, which could be returned by the function readshpnw.
 #'
-#' @param nodelist
-#' @param edgelist
-#' @param weight
-#' @param eadf
-#' @param Directed
+#' @param nodelist A “nodelist” object
+#' @param edgelist An “edgelist” object
+#' @param weight A numberic vector to weight all the edges in the “edgelist”, of which the length equals to the number of edges;
+#' @param eadf A data frame of attributes corresponding to all the edges;
+#' @param Directed  TRUE if edges are directed, FALSE otherwise;
 #'
-#' @return
+#' @return 1. The weighting vector, “weight”, will be used as default for any weigted calculations with edges in the “igraph” object.
+#'         2. The coordinate of each node is attached as attributes “X” and “Y”, which could be retrived via the function “get.vertex.attribute” from the package igraph.
 #' @export
 #'
 #' @examples
+#'
 nodedge_list2igraph <- function (nodelist, edgelist, weight = NULL, eadf = NULL, Directed = FALSE) {
   nodes <- nodelist[, 1]
   Ne <- length(edgelist[, 1])

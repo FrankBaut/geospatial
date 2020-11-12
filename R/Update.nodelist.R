@@ -1,3 +1,15 @@
+#' CORREGIR
+#'
+#' @param nodexlist
+#' @param nodeylist
+#' @param nodelist
+#' @param nx
+#' @param ny
+#'
+#' @return
+#' @export
+#'
+#' @examples
 Update.nodelist<-function (nodexlist, nodeylist, nodelist, nx, ny)
 {
   Nid <- length(nodexlist)

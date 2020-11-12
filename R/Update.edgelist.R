@@ -1,3 +1,16 @@
+#' CORREGIR
+#'
+#' @param Edgelist
+#' @param edgeid
+#' @param fromid
+#' @param toid
+#' @param ROL
+#' @param Detailed
+#'
+#' @return
+#' @export
+#'
+#' @examples
 Update.edgelist<-function (Edgelist, edgeid, fromid, toid, ROL, Detailed)
 {
   if (Detailed) {

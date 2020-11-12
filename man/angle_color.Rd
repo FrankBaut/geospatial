@@ -2,7 +2,7 @@
 % Please edit documentation in R/angle_color.R
 \name{angle_color}
 \alias{angle_color}
-\title{angle_color}
+\title{Given an angle between 0 and 360 degrees, return a color}
 \usage{
 angle_color(angle)
 }
@@ -13,7 +13,7 @@ angle_color(angle)
 hex color
 }
 \description{
-angle_color
+Given an angle between 0 and 360 degrees, return a color
 }
 \examples{
 angle_color(221)

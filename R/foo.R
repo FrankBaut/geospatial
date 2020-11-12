@@ -1,4 +1,4 @@
-#' Pipe transforming functinos
+#' Pipe operator with which you may pipe a value forward into an expression or function call.
 #'
 #' Like dplyr, ecointeraction also uses the pipe function, \code{\%>\%} to turn
 #' function composition into a series of imperative statements.

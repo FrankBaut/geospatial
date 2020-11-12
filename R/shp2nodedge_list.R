@@ -1,4 +1,4 @@
-#' Title
+#' CORREGIR
 #'
 #' @param ntdata
 #' @param ELComputed
