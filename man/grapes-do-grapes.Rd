@@ -10,7 +10,7 @@ obj \%do\% ex
 \item{data}{}
 }
 \value{
-
+polyline
 }
 \description{
 reconstred_route reconstruccion de rutas con geoposicoones en (lon,lat)

@@ -7,20 +7,27 @@ Installation
 install.packages("devtools")
 devtools::install_github("FrankBaut/geospatial")
 ```
-packages that are useful for some functions
+
 
 ``` r
+library(osrm)
+library(geospatial)
+library(igraph)
 library(shp2graph)
 ```
 
-
 ``` r
+url<-"http://0.0.0.0:5000/"
+options(osrm.server = url,osrm.profile = "driving")
 ```
 
-
 ``` r
+data<-geospatial::route
+geopoints<-geospatial::reconsted_route(data = data)
+plot(geopoints)
 ```
 
+![GitHub Logo](images/plot.png)
 
 
 ``` r

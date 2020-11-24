@@ -1,10 +1,10 @@
 #' Remove decimals from a value (significant numbers)
 #'
 #' @param x float value
-#' @param ...
+#' @param ... extra
 #' @param prec number of removed decimals in the x value
 #'
-#' @return
+#' @return precision value
 #' @export
 #'
 #' @examples

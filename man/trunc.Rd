@@ -9,10 +9,12 @@ trunc(x, ..., prec = 0)
 \arguments{
 \item{x}{float value}
 
+\item{...}{extra}
+
 \item{prec}{number of removed decimals in the x value}
 }
 \value{
-
+precision value
 }
 \description{
 Remove decimals from a value (significant numbers)

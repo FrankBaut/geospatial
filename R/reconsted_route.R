@@ -2,7 +2,7 @@
 #'
 #' @param data
 #'
-#' @return
+#' @return polyline
 #' @importFrom foreach foreach `%do%`
 #' @importFrom shp2graph readshpnw
 
