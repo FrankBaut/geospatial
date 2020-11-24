@@ -23,17 +23,27 @@ options(osrm.server = url,osrm.profile = "driving")
 
 ``` r
 data<-geospatial::route
-geopoints<-geospatial::reconsted_route(data = data)
-plot(geopoints)
+plot(data)
 ```
-
-![GitHub Logo](images/plot.png)
+![GitHub Logo](images/data.png)
 
 
 ``` r
+recons<-geospatial::reconsted_route(data = data)
+plot(recons)
 ```
 
+![GitHub Logo](images/recons.png)
 
+
+``` r
+R<-as(recons,"Spatial")
+R<-shp2graph::readshpnw(R,longlat = T,ELComputed = T)
+network<-geospatial::nodedge_list2igraph(R[[2]], R[[3]],Directed = T)
+plot(network,vertex.size=9)
+
+```
+![GitHub Logo](images/network.png)
 
 ``` r
 ```
