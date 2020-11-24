@@ -23,6 +23,7 @@ options(osrm.server = url,osrm.profile = "driving")
 
 ``` r
 data<-geospatial::route
+data<- data[seq(1, length(data$lng), 10),]
 plot(data)
 ```
 ![GitHub Logo](images/data.png)
@@ -30,7 +31,7 @@ plot(data)
 
 ``` r
 recons<-geospatial::reconsted_route(data = data)
-plot(recons)
+plot(data$geometry)
 ```
 
 ![GitHub Logo](images/recons.png)
