@@ -1,4 +1,4 @@
-#' It joins several gepositions by means of the shortest route in a road network both back and forth.
+#' Join several gepositions by means of the shortest route in a road network both back and forth.
 #'
 #' @param from_lng Origin lng
 #' @param from_lat Origin lat
